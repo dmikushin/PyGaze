@@ -83,8 +83,6 @@ setup(
 		"pygaze",
 		"pygaze._display",
 		"pygaze._eyetracker",
-		"pygaze._eyetracker.alea",
-		"pygaze._eyetracker.tobiiglasses",
 		"pygaze._joystick",
 		"pygaze._keyboard",
 		"pygaze._logfile",

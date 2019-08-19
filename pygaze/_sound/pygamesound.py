@@ -90,7 +90,7 @@ class PyGameSound(BaseSound):
 			cps = float(sps/freq) # cycles per sample
 			slen = settings.SOUNDSAMPLINGFREQUENCY * length / 1000 # number of samples
 
-			for i in range(slen):
+			for i in range(int(slen)):
 				p = float((i % cps)) / cps * 2 * math.pi
 				v = int(amp * (_func(p)))
 				if i < attack:
@@ -100,7 +100,7 @@ class PyGameSound(BaseSound):
 				l.append(v)
 				l.append(v)
 
-			b = numpy.array(l, dtype="int16").reshape(len(l) / 2, 2)
+			b = numpy.array(l, dtype="int16").reshape(int(len(l) / 2), 2)
 
 			self.sound = pygame.mixer.Sound(b)
 

@@ -61,7 +61,7 @@ class PsychoPyDisplay:
 		self.bgc = bgc
 		self.screennr = screennr
 		self.mousevis = False
-  		self.monitor = monitor
+		self.monitor = monitor
 
 		# create window
 		pygaze.expdisplay = Window(size=self.dispsize, pos=None,
